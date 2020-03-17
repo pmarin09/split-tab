@@ -1,5 +1,6 @@
 body {
-    background-color: #282c34;
+    /* background-color: #282c34; */
+    background: url(images/main.jpg) repeat 0px 0px;
 }
 
 .tab-list {
@@ -42,12 +43,13 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 30px 20px 0;
-    width: 100%;
-    border-bottom: 1px solid #cecece;
+    padding: 5px 5px 0;
+    width: 40%;
+    border-bottom: 2px dotted #0e5e6b;
     font-family: 'Allerta Stencil';font-size: 14px;
     font-weight: 100;
     color: #333333;
+    margin: auto;
 }
 
 input[type=checkbox] {
@@ -74,25 +76,23 @@ input[type=checkbox]:focus {
 }
 
 .pricing-table {
-    /* background: url(/images/table.png) no-repeat 1px 2px;
-    background-size: 500px 500px; */
-    background-color: white;
-	width: 50%;
-	height: 520px;
-	margin: 9% auto;
+    background: url(images/Table.png) no-repeat 0px 0px;
+    background-size: 500px 900px;
+    background-position: center;
+    width: 50%;
+	height: 900px;
+	margin: auto;
 	position: relative;
 }
-.pricing-table-info {
+.tab-heading {
     background: url(images/invoice.png) no-repeat 0px 0px;
     background-size: 100px 100px;
-    position: absolute;
-    width: 50%;
+    background-position: center;
+    position: relative;
     height: 25%;
-    top: -10%;
-    right: 25%;
     background-position: center;
 }
-.pricing-table-info:hover {
+.tab-heading:hover {
 	transform: rotateY(360deg);
 	-webkit-transform: rotateY(360deg);
 	-moz-transform: rotateY(360deg);
@@ -103,23 +103,8 @@ input[type=checkbox]:focus {
 	transition: 0.8s;
 	cursor: pointer;
 }
-.pricing-bottom h1 {
-	padding: 65px 0 20px;
-	color: #999;
-	border-bottom: 1px solid#999;
-	font-size: 1.5em;
-}
-.pricing-bottom h2 {
-	font-size: 3em;
-	color: #999;
-	padding: 10px 0;
-	border-bottom: 1px solid#999;
-}
-.pricing-bottom h2 i {
-	color: #000;
-}
-.pricing-bottom h2 span {
-	color: #20b2fd;
-	font-weight: 600;
-	font-size: 1.5em;
+.tab-info{
+    display:block;
+    margin-top: 10%;
+    
 }

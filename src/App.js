@@ -60,12 +60,12 @@ return(
       //   </div>
         <div>
             <div className="pricing-table">
-            <div className="pricing-table-info">	
-            </div>		
-              <div className="pricing-bottom">
-                <h1 className = "title">Tab 1</h1>
-                {tabItems}	
-            </div>
+            <div className="tab-heading"></div>
+            
+            <div className= "tab-info">
+            {tabItems}	
+              </div>		
+                	
           </div>
         </div>     
       )

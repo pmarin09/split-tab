@@ -6,6 +6,7 @@ import firebase from "firebase"
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
 import './App.css';
 
+
 firebase.initializeApp({
   apiKey: "AIzaSyAYzeOmKOk5adpLs9VF4CkpSFK-wZTESac",
   authDomain: "splittab-fb51c.firebaseapp.com"
@@ -41,21 +42,31 @@ function App() {
     });
   }
 return(
-      <div className="tab-list">
-        <h1 className = "title">Welcome to SplitTab</h1>
+      // <div className="tab-list">
+      //   <h1 className = "title">Welcome to SplitTab</h1>
         
-         {isSignedIn ? (
-          <span>
-            <button onClick={signOut}>Sign out!</button>
-            <h1>Hi {firebase.auth().currentUser}</h1>
-            {tabItems}
-          </span>
-        ) : (
-          <StyledFirebaseAuth
-            uiConfig={uiConfig}
-            firebaseAuth={firebase.auth()}
-          />)   
-        }
+      //    {isSignedIn ? (
+      //     <span>
+      //       <button onClick={signOut}>Sign out!</button>
+      //       <h1>Hi {firebase.auth().currentUser}</h1>
+      //       {tabItems}
+      //     </span>
+      //   ) : (
+      //     <StyledFirebaseAuth
+      //       uiConfig={uiConfig}
+      //       firebaseAuth={firebase.auth()}
+      //     />)   
+      //   }
+      //   </div>
+        <div>
+            <div className="pricing-table">
+            <div className="pricing-table-info">	
+            </div>		
+              <div className="pricing-bottom">
+                <h1 className = "title">Tab 1</h1>
+                {tabItems}	
+            </div>
+          </div>
         </div>     
       )
     

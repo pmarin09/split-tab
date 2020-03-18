@@ -8,24 +8,14 @@ import './App.css';
 
 
 function App() {
-  const [checkBox, setcheckBox] = useState(true)
-  const [checkedMsg, setcheckedMsg] = useState("")
   const tabItems = tabData.map(item => <TabItem key={item.id} item={item}/>)
-
-
-  useEffect(()=> {
-    checkBox ? setcheckedMsg({ checkedMsg: 'HOLA' }) : setcheckedMsg({ checkedMsg: 'unchecked' })
-  function tick() {
-    setcheckBox({checkBox: !checkBox})
-  }
-    }, [])
+  
 return(
         <div>
             <div className="pricing-table">
               <div className="tab-heading"></div>
               <div className= "tab-info">
                 {tabItems}	
-                
               </div>			
           </div>
         </div>     

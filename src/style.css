@@ -46,7 +46,7 @@ body {
     padding: 5px 5px 0;
     width: 40%;
     border-bottom: 2px dotted #0e5e6b;
-    font-family: 'Allerta Stencil';font-size: 14px;
+    font-family: 'Allerta Stencil';font-size: 12px;
     font-weight: 100;
     color: #333333;
     margin: auto;
@@ -76,7 +76,7 @@ input[type=checkbox]:focus {
 }
 
 .pricing-table {
-    background: url(images/Table.png) no-repeat 0px 0px;
+    background: url(images/table.png) no-repeat 0px 0px;
     background-size: 500px 900px;
     background-position: center;
     width: 50%;

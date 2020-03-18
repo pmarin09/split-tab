@@ -5,7 +5,7 @@ function TabItem(props) {
     const [checkBox, setcheckBox] = useState(false)
     function tick() {
         setcheckBox(!checkBox)
-        checkBox ? setcheckedMsg('HOLA') : setcheckedMsg('')
+        checkBox ? setcheckedMsg('Hola') : setcheckedMsg('')
       }
       useEffect(()=> {
         tick()
@@ -17,7 +17,7 @@ function TabItem(props) {
             onClick={tick}
              defaultChecked={props.check}
             />
-            <label for={props.item.id}>
+            <label className= "label-checkboxes"for={props.item.id}>
            <div id="tick_mark"></div>
             </label> 
             <p>{props.item.text} - ${props.item.price}</p>

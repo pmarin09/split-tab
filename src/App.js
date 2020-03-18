@@ -1,24 +1,36 @@
 import React, {useState, useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import tabData from "./tabData"
-import TabItem from "./tabItem.js"
-import firebase from "firebase"
+import fire from './config/Fire'
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth"
 import './App.css';
-
+import Login from './Login'
+import Home from './Home'
 
 function App() {
-  const tabItems = tabData.map(item => <TabItem key={item.id} item={item}/>)
   
+  const [user, setUser] = useState("")
+  
+
+  function authListener() {
+    fire.auth().onAuthStateChanged((user) => {
+      if (user) {
+        setUser(user);
+      } else {
+        setUser(null);
+      }
+    });
+  }
+
+  useEffect(()=> {
+    authListener()
+      }, [])
+
 return(
+        
         <div>
-            <div className="pricing-table">
-              <div className="tab-heading"></div>
-              <div className= "tab-info">
-                {tabItems}	
-              </div>			
-          </div>
-        </div>     
+          {user ? (<Home />): (<Login/>)}
+        </div>
+             
       )
     
   }

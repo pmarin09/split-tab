@@ -12,23 +12,16 @@ function TabItem(props) {
           }, [])
     return (
         <div className="tab-item">
-            {/* <input 
-            type="checkbox"     
-            id="_checkbox"
-            onClick={tick}
-            defaultChecked={props.check}
-            // checked={props.item.checked}
-            /> */}
             <input type="checkbox" 
             id={props.item.id}
             onClick={tick}
-            defaultChecked={props.check}
+             defaultChecked={props.check}
             />
             <label for={props.item.id}>
            <div id="tick_mark"></div>
             </label> 
             <p>{props.item.text} - ${props.item.price}</p>
-            <h1>{checkedMsg}</h1>
+            <h4>{checkedMsg}</h4>
         </div>
     )
 }

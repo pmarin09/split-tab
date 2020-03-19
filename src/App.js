@@ -5,27 +5,30 @@ import './App.css';
 import Login from './Login'
 import Home from './Home'
 
-function App(props) {
-  const [user, setUser] = useState("")
 
-  function authListener() {
+function App({ws}) {
+  const [user, setUser] = useState("")
+  const authListener = () => {
     fire.auth().onAuthStateChanged((user) => {
       if (user) {
         setUser(user);
+        //ws.send(JSON.stringify(`${user.email} connected!`))
       } else {
         setUser(null);
       }
+       
     });
   }
 
   useEffect(()=> {
     authListener()
+
       }, [])
 
 return(
         
         <div>
-          {user ? (<Home />): (<Login/>)}
+          {user ? (<Home ws={ws}/>): (<Login/>)}
         </div>
              
       )

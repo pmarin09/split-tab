@@ -66,6 +66,8 @@ body {
 
 }
 
+
+
 .pricing-table {
     background: url(images/table.png) no-repeat 0px 0px;
     background-size: 500px 900px;
@@ -248,4 +250,23 @@ form {
 .form-group{
 font-family: 'Allerta Stencil';font-size: 12px;
 color: #ffffff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 144px auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+
+  .row{
+    
+}
+.login-logo {
+    background: url(images/logo.png) no-repeat 0px 0px;
+    background-size: 325px 110px;
+    background-position: center;
+    position: relative;
+    background-position: center;
+    grid-row-start: 1;
 }

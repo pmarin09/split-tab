@@ -36,11 +36,13 @@ class Login extends Component {
   }
   render() {
     return (
- 
+      <div className="grid-container">
+      <div className="login-logo"> </div>
+      
             <div className='row'>
                 <div className="col-centered">
             <form>
-            
+           
                     <div className="form-group">
                             <label htmlFor="exampleInputEmail1">Email address</label>
                             <input value={this.state.email} onChange={this.handleChange} type="email" name="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
@@ -56,11 +58,10 @@ class Login extends Component {
                         <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn btn-success">Signup</button>
                             
             </form>
-                
-                </div>
+            
             </div>
- 
- 
+            </div>
+            </div>   
     );
   }
 }

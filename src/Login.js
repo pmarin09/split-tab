@@ -36,8 +36,9 @@ class Login extends Component {
   }
   render() {
     return (
-        <section className = "form-auth text-center">
-            
+ 
+            <div className='row'>
+                <div className="col-centered">
             <form>
             
                     <div className="form-group">
@@ -49,13 +50,16 @@ class Login extends Component {
                     <div className="form-group">
                             <label htmlFor="exampleInputPassword1">Password</label>
                             <input value={this.state.password} onChange={this.handleChange} type="password" name="password" className="form-control" id="exampleInputPassword1" placeholder="Password" />
-                    </div>
                     
-                            <button type="submit" onClick={this.login} className="btn btn-primary">Login</button>
-                            <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn btn-success">Signup</button>
+                    </div>
+                        <button type="submit" onClick={this.login} className="btn btn-primary">Login</button>
+                        <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn btn-success">Signup</button>
+                            
             </form>
-          
-        </section>
+                
+                </div>
+            </div>
+ 
  
     );
   }

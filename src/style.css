@@ -231,3 +231,21 @@ input[type='checkbox']:checked + .label-checkboxes #tick_mark:before, input[type
     transform: translate(0);
     opacity: 1;
 }
+
+form {
+    display: inline-block;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.btn {
+    margin-left: 30px;
+}
+
+.form-group{
+font-family: 'Allerta Stencil';font-size: 12px;
+color: #ffffff;
+}

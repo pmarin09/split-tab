@@ -66,14 +66,12 @@ body {
 
 }
 
-
-
 .pricing-table {
     background: url(images/table.png) no-repeat 0px 0px;
-    background-size: 500px 900px;
+    background-size: 550px 1100px;
     background-position: center;
     width: 50%;
-	height: 900px;
+    height: 1200px;
 	margin: auto;
 	position: relative;
 }
@@ -243,9 +241,6 @@ form {
     margin: 0 auto;
 }
 
-.btn {
-    margin-left: 30px;
-}
 
 .form-group{
 font-family: 'Allerta Stencil';font-size: 12px;
@@ -259,9 +254,6 @@ color: #ffffff;
     padding: 10px;
   }
 
-  .row{
-    
-}
 .login-logo {
     background: url(images/logo.png) no-repeat 0px 0px;
     background-size: 325px 110px;
@@ -270,3 +262,31 @@ color: #ffffff;
     background-position: center;
     grid-row-start: 1;
 }
+
+.total{
+    font-family: 'Nova Flat';
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.grid-total-container {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  .grid-tip-container {
+    display: inline-grid;
+    grid-template-columns: 66px 75px 75px 50px;
+    grid-template-rows: 36px;
+    margin-left: 433px;
+  }  
+  .tip{
+    font-family: 'Nova Flat';
+    font-size: 15px;
+    text-align: center;
+    grid-template-columns: auto auto auto auto;
+
+  }

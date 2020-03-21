@@ -55,7 +55,7 @@ class Login extends Component {
                     
                     </div>
                         <button type="submit" onClick={this.login} className="btn btn-primary">Login</button>
-                        <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn btn-success">Signup</button>
+                        <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn btn-success-login">Signup</button>
                             
             </form>
             

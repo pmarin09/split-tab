@@ -324,3 +324,10 @@ color: #ffffff;
     margin-right: 30px;
 }
  
+.user{
+    font-family: 'Inconsolata';
+    font-size: 13px;
+    text-align: right;
+    text-decoration: underline;
+   
+  }

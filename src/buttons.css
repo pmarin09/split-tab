@@ -69,7 +69,8 @@
     animation: AnimationName 3s ease infinite;
     border: medium none;
     font-family: 'Allerta Stencil';font-size: 13px;
-    margin-left: 485px
+    margin-left: 498px;
+    margin-top: 20px;
 }
 .btn-danger{
     background: #e81216;

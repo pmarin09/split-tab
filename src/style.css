@@ -96,10 +96,9 @@ body {
 }
 .tab-info{
     display:block;
-    margin-top: 10%;
-    
+    margin-top: 3%;
+    width: 100%;
 }
-
 
 *
 {
@@ -263,30 +262,65 @@ color: #ffffff;
     grid-row-start: 1;
 }
 
-.total{
+.tab-data{
     font-family: 'Nova Flat';
     font-size: 15px;
     text-align: center;
-
+    margin-top: 7px;
+}
+.total{
+    font-family: 'Inconsolata';
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
 }
 
-.grid-total-container {
+.grid-tab-container {
     display: grid;
     grid-template-rows: auto auto auto auto;
     grid-template-columns: auto;
     grid-gap: 10px;
-    padding: 10px;
+    padding: 9px;
+    margin-top: 2%;
   }
-  .grid-tip-container {
+.grid-subtotal-container {
     display: inline-grid;
-    grid-template-columns: 66px 75px 75px 50px;
-    grid-template-rows: 36px;
-    margin-left: 433px;
+    grid-template-columns: 68px 75px;
+    grid-template-rows: 25px;
+    margin-left: 361px;
   }  
-  .tip{
+.grid-tax-container {
+    display: inline-grid;
+    grid-template-columns: 65px 75px;
+    grid-template-rows: 25px;
+    margin-left: 368px;
+  }  
+.grid-tip-container {
+    display: inline-grid;
+    grid-template-columns: 64px 75px 63px 63px 63px;
+    grid-template-rows: 35px;
+    margin-left: 354px;
+  }  
+  .grid-total-container {
+    display: inline-grid;
+    grid-template-columns: 65px 75px;
+    grid-template-rows: 25px;
+    margin-left: 368px;
+  }  
+.tip{
     font-family: 'Nova Flat';
     font-size: 15px;
     text-align: center;
     grid-template-columns: auto auto auto auto;
 
   }
+.grid-subtotal{
+    margin-right: 20px;
+}
+.grid-tax{
+    margin-right: 30px;
+}
+.grid-total{
+    margin-right: 30px;
+}
+ 

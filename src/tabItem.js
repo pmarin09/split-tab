@@ -41,8 +41,8 @@ function TabItem(props) {
             <label className= "label-checkboxes" htmlFor={props.item.id}>
            <div id="tick_mark"></div>
             </label> 
-            <p>{props.item.text} - ${props.item.price}</p>
-            <>{props.status ? props.email : ""}</>
+            <p>{props.item.text} - ${props.item.price}
+            {props.status ? props.email : ""}</p>
         </div>
     )
 }

@@ -8,11 +8,21 @@ import Home from './Home'
 
 function App({ws}) {
   const [user, setUser] = useState("")
+  const [onlineUsers, setOnlineUsers] = useState([])
   const authListener = () => {
     fire.auth().onAuthStateChanged((user) => {
       if (user) {
+        console.log('refesh')
         setUser(user);
-        //ws.send(JSON.stringify(`${user.email} connected!`))
+        if (!onlineUsers.includes(user.email)) {
+          setOnlineUsers(onlineUsers => [...onlineUsers, user.email])
+        }
+        ws.send( 
+          JSON.stringify({
+              event: 'user login',
+              email: user.email, 
+          })
+        )
       } else {
         setUser(null);
       }
@@ -28,7 +38,7 @@ function App({ws}) {
 return(
         
         <div>
-          {user ? (<Home ws={ws}/>): (<Login/>)}
+          {user ? (<Home ws={ws} onlineUsers={onlineUsers} setOnlineUsers={setOnlineUsers}/>): (<Login/>)}
         </div>
              
       )

@@ -213,19 +213,25 @@ input[type='checkbox']
     transform: translateX(78px);
 }
 
-input[type='checkbox']:checked + .label-checkboxes
-{
+/* input[type='checkbox']:checked + .label-checkboxes */
+.input-checked {
     background-color: #07d410;
     box-shadow: 0 7px 10px #92ff97;
 }
+.otherdUser {
+    background-color: blue;
+    box-shadow: 0 7px 10px cyan;
+}
 
-input[type='checkbox']:checked + .label-checkboxes:before
+/* input[type='checkbox']:checked + .label-checkboxes:before */
+.input-checked:before
 {
     width: 0;
     height: 0;
 }
 
-input[type='checkbox']:checked + .label-checkboxes #tick_mark:before, input[type='checkbox']:checked + .label-checkboxes #tick_mark:after
+/* input[type='checkbox']:checked + .label-checkboxes #tick_mark:before, input[type='checkbox']:checked + .label-checkboxes #tick_mark:after */
+.input-checked #tick_mark:before, .input-checked #tick_mark:after 
 {
     transform: translate(0);
     opacity: 1;
@@ -330,4 +336,10 @@ color: #ffffff;
     text-align: right;
     text-decoration: underline;
    
+  }
+  @media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
   }

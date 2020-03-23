@@ -31,16 +31,20 @@ function TabItem(props) {
       useEffect(()=> {
         //tick()
           }, [])
+
+    
     return (
         <div className="tab-item">
+            
             <input type="checkbox" 
             id={props.item.id}
             onClick={() => handleClick(props.status, props.email)}
             defaultChecked={props.status}
+            disabled={props.email !== fire.auth().currentUser.email && props.status ? true : false}
             />
-            <label className= "label-checkboxes" htmlFor={props.item.id}>
+            <label className={(props.status ? "label-checkboxes input-checked": "label-checkboxes").concat(props.email === fire.auth().currentUser.email ? '' : ' otherdUser')} htmlFor={props.item.id}>
            <div id="tick_mark"></div>
-            </label> 
+            </label>
             <p>{props.item.text} - ${props.item.price} <span className= "user">{props.status ? props.email : ""}</span></p>
         </div>
     )

@@ -337,9 +337,105 @@ color: #ffffff;
     text-decoration: underline;
    
   }
-  @media only screen and (max-width: 500px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-      width: 100%;
+  @media only screen and (max-width: 800px) {
+      .div{
+         border-color: solid black; 
+      }
+    .pricing-table {
+        background: url(/static/media/table.6463e49e.png) no-repeat -10px -4px;
+        background-size: 329px 1350px;
+        width: 95%;
+        height: 1500px;
+        margin: auto;
+        background-position-x: center;
+        background-position-y: 78px;
+        }
+        #root{
+         max-width: 350px;
+         margin:auto;
+        }
+        .btn-danger {
+           margin-left: 0px !important;
+        }
+
+        .tab-info {
+            display: block;
+            margin-top: 3%;
+            width: 557px;
+            margin-left: -132px;
+        }
+
+        .label-checkboxes {
+            position: absolute;
+            top: auto;
+            right: 0;
+            left: -100px;
+            width: 30px;
+            height: 30px;
+            margin: 0 auto;
+            background-color: #f72414;
+            transform: translateY(-25%);
+            border-radius: 50%;
+            box-shadow: 0 7px 10px #ffbeb8;
+            cursor: pointer;
+            transition: 0.2s ease transform, 0.2s ease background-color, 0.2s ease box-shadow;
+            overflow: hidden;
+            z-index: 1;
+            right: 50%;
     }
-  }
+        .tab-heading {
+            background: url(/static/media/logo.79d17e85.png) no-repeat 0px 0px;
+            background-size: 230px 86px;
+            background-position: center;
+            position: relative;
+            height: 20%;
+            background-position: center;
+        }
+       
+
+        .tab-item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 5px 5px 0;
+            width: 45%;
+            border-bottom: 2px dotted #0e5e6b;
+            font-family: 'Allerta Stencil';
+            font-size: 12px;
+            font-weight: 100;
+            color: #333333;
+            margin: auto;
+            margin-left: 181px;
+        }
+        .grid-subtotal-container {
+            display: inline-grid;
+            grid-template-columns: 68px 75px;
+            grid-template-rows: 25px;
+            margin-left: 150px;
+        }
+        .grid-tax-container {
+            display: inline-grid;
+            grid-template-columns: 39px 75px;
+            grid-template-rows: 25px;
+            margin-left: 184px;
+        }
+        .grid-tip-container {
+            display: grid;
+            grid-template-rows: 35px 64px;
+            margin-left: 179px;
+            grid-template-columns: 39px 58px 55px 55px 55px;
+            grid-template-rows: max-content;
+        }
+        .grid-total-container {
+            display: inline-grid;
+            grid-template-columns: 65px 75px;
+            grid-template-rows: 25px;
+            margin-left: 223px;
+            margin-top: 20px;
+        }
+        .btn-success{
+            margin-left: 204px !important;
+            margin-top: 0px;
+        }
+}
+  

@@ -2,6 +2,7 @@
   "name": "splittab",
   "version": "0.1.0",
   "private": true,
+  "engines":{"node": "12.16.1", "npm": "6.13.4"},
   "dependencies": {
     "@react-firebase/auth": "^0.2.10",
     "@testing-library/jest-dom": "^4.2.4",

@@ -94,6 +94,10 @@ function Home ({ws, onlineUsers, setOnlineUsers}) {
           )
         setOnlineUsers([])
     }
+
+    function success(){
+        alert("Thank you for your order. Come see us again..")
+    }
         return (
         <div>
            
@@ -108,7 +112,8 @@ function Home ({ws, onlineUsers, setOnlineUsers}) {
                   <div className= "tab-info">
                     {tabItems}
                     <Total subtotal={subtotal}/>
-                    <button type="button" className="btn btn-success btn-md btn-radius">Complete Order</button>
+                    <button type="button" className="btn btn-success btn-md btn-radius" onClick={success}>Complete Order</button>
+                    
                  </div>			
             </div>
             

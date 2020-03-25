@@ -349,7 +349,7 @@ color: #ffffff;
     margin-left: 480px;
 }
    .online-img{
-    background: url(/static/media/online.c2525846.png) no-repeat 0px 0px;
+    background: url(./images/online.png) no-repeat 0px 0px;
     background-size: 142px 47px;
     width: 227px;
     height: 48px;

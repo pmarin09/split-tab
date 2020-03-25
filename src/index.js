@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
-const ws = new WebSocket('ws:https://splittab-ws.herokuapp.com/');
+const ws = new WebSocket(`ws:${process.env.SERVER_URL}`);
 
 ws.onopen = () => {
   console.log('websocket is connected ...');

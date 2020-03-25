@@ -96,11 +96,11 @@ function Home ({ws, onlineUsers, setOnlineUsers}) {
     }
         return (
         <div>
-            <div className="pricing-table">
-            <button className="btn btn-danger btn-md btn-radius" onClick={signout}>Logout</button>
-            <div style={{color: 'white'}}>
-                {onlineUsers.map((email, idx)=><p key={idx}>{email}</p>)}
+            <><button className="btn btn-danger btn-xs btn-radius" onClick={signout}>Logout</button></>
+            <div className= "online-users">
+                {onlineUsers.map((email, idx)=><ol key={idx}>{email}</ol>)}
             </div>
+            <div className="pricing-table">
                 <div className="tab-heading"></div>
                   <div className= "tab-info">
                     {tabItems}

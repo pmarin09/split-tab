@@ -1,5 +1,5 @@
+
 body {
-    /* background-color: #282c34; */
     background: url(images/main.jpg) repeat 0px 0px;
 }
 
@@ -70,11 +70,11 @@ body {
     background: url(/static/media/table.ff44e5a9.png) no-repeat 0px 0px;
     background-size: 625px 2030px;
     width: 50%;
-    height: 1501px;
+    height: 1225px;
     margin: auto;
     position: relative;
     background-position-x: center;
-    background-position-y: 144px;
+    background-position-y: 9px;
 }
 .tab-heading {
     background: url(images/logo.png) no-repeat 0px 0px;
@@ -261,7 +261,7 @@ color: #ffffff;
   }
 
 .login-logo {
-    background: url(images/logo.png) no-repeat 0px 0px;
+    background: url(./images/logo.png) no-repeat 0px 0px;
     background-size: 325px 110px;
     background-position: center;
     position: relative;
@@ -341,19 +341,41 @@ color: #ffffff;
     font-size: 13px;
     text-align: right;
     text-decoration: underline;
-   
   }
+  .online-users{
+    color: white;
+    font-family: 'Inconsolata';
+    font-size: 15px;
+    margin-left: 480px;
+}
+.btn-danger {
+    margin-top: 17px;
+    margin-left: 1200px !important;
+ }
+
+ 
   @media only screen and (max-width: 800px) {
-      .div{
-         border-color: solid black; 
+
+    body {
+        background: url(images/main.jpg) repeat 0px 0px;
+    }
+      ol{
+          margin-bottom:0;
       }
+      .online-users{
+        color: white;
+        font-family: 'Inconsolata';
+        font-size: 10px;
+        margin-left: 0px;
+        
+    }
     .pricing-table {
         background-size: 408px 1389px;
         width: 95%;
         height: 1211px;
         margin: auto;
         background-position-x: -33px;
-        background-position-y: 125px;
+        background-position-y: 36px;
         }
         #root{
          max-width: 350px;
@@ -361,6 +383,7 @@ color: #ffffff;
         }
         .btn-danger {
            margin-left: 0px !important;
+           float:right;
         }
 
         .tab-info {

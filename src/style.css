@@ -1,6 +1,6 @@
 
 body {
-    background: url(images/main.jpg) repeat 0px 0px;
+    background: url(./images/main.jpg) repeat 0px 0px;
 }
 
 .tab-list {
@@ -77,7 +77,7 @@ body {
     background-position-y: 9px;
 }
 .tab-heading {
-    background: url(images/logo.png) no-repeat 0px 0px;
+    background: url(./images/logo.png) no-repeat 0px 0px;
     background-size: 325px 110px;
     background-position: center;
     position: relative;

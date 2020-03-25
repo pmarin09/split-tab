@@ -96,8 +96,11 @@ function Home ({ws, onlineUsers, setOnlineUsers}) {
     }
         return (
         <div>
-            <><button className="btn btn-danger btn-xs btn-radius" onClick={signout}>Logout</button></>
+           
             <div className= "online-users">
+                <div className= "online-img">
+                <button className="btn btn-danger btn-xs btn-radius" onClick={signout}>Logout</button>
+                </div>
                 {onlineUsers.map((email, idx)=><ol key={idx}>{email}</ol>)}
             </div>
             <div className="pricing-table">

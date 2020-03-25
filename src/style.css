@@ -67,7 +67,7 @@ body {
 }
 
 .pricing-table {
-    background: url(/static/media/table.ff44e5a9.png) no-repeat 0px 0px;
+    background: url(./images/table.png) no-repeat 0px 0px;
     background-size: 625px 2030px;
     width: 50%;
     height: 1225px;
@@ -348,16 +348,22 @@ color: #ffffff;
     font-size: 15px;
     margin-left: 480px;
 }
+   .online-img{
+    background: url(/static/media/online.c2525846.png) no-repeat 0px 0px;
+    background-size: 142px 47px;
+    width: 227px;
+    height: 48px;
+    background-position-x: 45px;
+}
+
 .btn-danger {
     margin-top: 17px;
-    margin-left: 1200px !important;
- }
+}
 
- 
   @media only screen and (max-width: 800px) {
 
     body {
-        background: url(images/main.jpg) repeat 0px 0px;
+        background: url(./images/main.jpg) repeat 0px 0px;
     }
       ol{
           margin-bottom:0;
@@ -384,6 +390,7 @@ color: #ffffff;
         .btn-danger {
            margin-left: 0px !important;
            float:right;
+           margin-top: 2px;
         }
 
         .tab-info {
@@ -415,27 +422,27 @@ color: #ffffff;
             z-index: 1;
             right: 50%;
     }
-        .label-checkboxes:before
+        /* .label-checkboxes:before
     {
             content: "";
             position: absolute;
             top: 49%;
             right: 0px;
             left: 0px;
-            width: 20px;
-            height: 20px;
+            width: 15px;
+            height: 15px;
             margin: 0 auto;
             background-color: #fff;
             transform: translateY(-50%);
             border-radius: 50%;
             box-shadow: inset 0 7px 10px #ffbeb8;
             transition: 0.2s ease width, 0.2s ease height;
-    }
-
+    } */
+   
     .label-checkboxes:hover:before
     {
-            width: 15px;
-            height: 15px;
+            width: 0px !important;
+            height: 0px !important;
             box-shadow: inset 0 7px 10px #ff9d96;
     } 
     .label-checkboxes:hover:after
@@ -554,6 +561,16 @@ color: #ffffff;
     .btn-success{
             margin-left: 204px !important;
             margin-top: 0px;
+    }
+    .online-img{
+        background: url(/static/media/online.c2525846.png) no-repeat 0px 0px;
+        background-size: 75px 25px;
+        width: 349px;
+        height: 25px;
+        background-position-x: 45px;
+    }
+    *, ::after, ::before {
+        box-sizing: content-box;
     }
 }
   

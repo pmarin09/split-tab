@@ -2,17 +2,22 @@
   "name": "splittab",
   "version": "0.1.0",
   "private": true,
-  "engines":{"node": "12.16.1", "npm": "6.13.4"},
+  "engines": {
+    "node": "12.16.1",
+    "npm": "6.13.4"
+  },
   "dependencies": {
     "@react-firebase/auth": "^0.2.10",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "bootstrap": "^4.4.1",
     "firebase": "^7.11.0",
     "firebaseui": "^4.5.0",
     "react": "^16.13.0",
     "react-alert": "^7.0.0",
     "react-alert-template-basic": "^1.0.0",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.13.0",
     "react-firebaseui": "^4.1.0",
     "react-scripts": "3.4.0"
